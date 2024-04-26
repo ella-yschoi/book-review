@@ -10,3 +10,7 @@
 4. [타입 코드 처리하기](/five-lines-of-code/04_타입_코드_처리하기.md)
 5. [유사한 코드 융합하기](/five-lines-of-code/05_유사한_코드_융합하기.md)
 6. [데이터 보호](/five-lines-of-code/06_데이터_보호.md)
+7. [컴파일러와의 협업](/five-lines-of-code/07_컴파일러와의_협업.md)
+8. [주석 자제하기](/five-lines-of-code/08_주석_자제하기.md)
+9. [코드 삭제의 미학](/five-lines-of-code/09_코드_삭제의_미학.md)
+10. [코드 추가에 대한 두려움 떨쳐내기](/five-lines-of-code/10_코드_추가에_대한_두려움_떨쳐내기.md)

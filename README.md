@@ -13,3 +13,4 @@
 ## 📘 읽는 중
 
 - [Five Lines of Code](/five-lines-of-code/)
+- [컴퓨터 밑바닥의 비밀](/컴퓨터_밑바닥의_비밀/)

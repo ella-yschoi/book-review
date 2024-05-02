@@ -14,3 +14,7 @@
 8. [주석 자제하기](/five-lines-of-code/08_주석_자제하기.md)
 9. [코드 삭제의 미학](/five-lines-of-code/09_코드_삭제의_미학.md)
 10. [코드 추가에 대한 두려움 떨쳐내기](/five-lines-of-code/10_코드_추가에_대한_두려움_떨쳐내기.md)
+11. [코드 구조 따르기](/five-lines-of-code/11_코드_구조_따르기.md)
+12. [최적화 및 일반화 회피](/five-lines-of-code/12_최적화_일반화_회피.md)
+13. [나쁜 코드를 식별 가능하게 만들기](/five-lines-of-code/13_나쁜_코드를_식별_가능하게_만들기.md)
+14. [마무리](/five-lines-of-code/14_마무리.md)

@@ -28,7 +28,7 @@
 
 ### 5. 작은 것으로 큰 성과 이루기, 캐시
 
-- []()
+- [[감상평] Chapter 5](https://github.com/elegant-functional-2023/secrets-of-computer/discussions/14#discussioncomment-10224829)
 
 ### 6. 입출력이 없는 컴퓨터가 있을까?
 

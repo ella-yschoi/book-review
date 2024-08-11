@@ -32,7 +32,7 @@
 
 ### 6. 입출력이 없는 컴퓨터가 있을까?
 
-- []()
+- [[감상평] Chapter 6](https://github.com/elegant-functional-2023/secrets-of-computer/discussions/15#discussioncomment-10294010)
 
 ### 7. 마무리
 

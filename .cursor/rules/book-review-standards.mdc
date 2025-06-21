@@ -1,0 +1,146 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Book Review Project Standards
+
+## 🎯 Project Overview
+This is a personal technical book review repository where learning content is systematically organized with Korean documentation, code examples, and practical applications.
+
+## 📁 Project Structure
+- Main index: [README.md](mdc:README.md)
+- Book directories: `ds-the-fun-way/`, `five-lines-of-code/`, `리액트-훅을-활용한-마이크로-상태-관리/`, `컴퓨터-밑바닥의-비밀/`
+- Template: [Template.md](mdc:Template.md)
+
+## 🚨 CRITICAL RULES - MUST FOLLOW
+
+### 1. Language & Communication
+- **ALWAYS respond in Korean** - This is a Korean learning repository
+- Use polite and respectful tone (존댓말)
+- Maintain consistency with existing Korean documentation style
+
+### 2. File Naming Convention
+- **MUST use Korean directory names** for new book folders
+- **MUST use numbered prefixes**: `01_`, `02_`, `03_` for chapter files
+- **MUST use underscores** instead of spaces: `01_메모리_안_정보.md`
+- **NEVER use spaces** in filenames
+
+### 3. Markdown Structure
+- **MUST follow the 3-section pattern**:
+  ```markdown
+  # Book Title - Chapter Name
+  > Subtitle or key summary
+  
+  <br/>
+  
+  ## 🔖 Section Title
+  
+  ### Book Content
+  - Original content summary
+  
+  ### My Thoughts
+  - Personal interpretation and connections
+  
+  ### Code Examples
+  - Actual implementation code
+  ```
+
+### 4. Emoji Usage
+- **MUST use emojis** for visual organization:
+  - 📔 : Book titles
+  - 🔖 : Main sections
+  - 📚 : Related problems/solutions
+  - 📕 : Completed books
+  - 📘 : Currently reading
+
+### 5. Code Block Standards
+- **MUST use TypeScript/JavaScript** for code examples
+- **MUST include comments** explaining the logic
+- **MUST show time complexity** when relevant
+- **MUST connect to practical applications**
+
+## ❌ STRICTLY FORBIDDEN
+
+### 1. Content Violations
+- **NEVER create content in English** - all content must be in Korean
+- **NEVER skip the "My Thoughts" section** - personal interpretation is mandatory
+- **NEVER use plain text without emojis** for section headers
+- **NEVER create files without numbered prefixes**
+
+### 2. Structure Violations
+- **NEVER use spaces in filenames**
+- **NEVER skip the `<br/>` separators** between sections
+- **NEVER create content without the 3-section pattern**
+- **NEVER ignore the existing project structure**
+
+### 3. Code Violations
+- **NEVER write code without comments**
+- **NEVER skip time complexity analysis**
+- **NEVER create code that doesn't connect to real-world applications**
+
+## ✅ BEST PRACTICES
+
+### 1. Learning Methodology
+- Connect theory with practical implementation
+- Link to LeetCode problems or real-world scenarios
+- Include personal experiences from work projects
+- Maintain progressive learning structure
+
+### 2. Documentation Quality
+- Use clear, concise Korean explanations
+- Include code examples for every concept
+- Add tables for comparisons when relevant
+- Link to external resources (blogs, GitHub discussions)
+
+### 3. Consistency Maintenance
+- Follow existing file patterns exactly
+- Use consistent emoji placement
+- Maintain uniform header structure
+- Keep link formatting consistent
+
+## 🔧 Technical Standards
+
+### 1. Code Examples
+```typescript
+// MUST include comments explaining the logic
+function exampleFunction(input: string): number {
+  // Time complexity: O(n)
+  // Space complexity: O(1)
+  
+  // Implementation logic here
+  return result;
+}
+```
+
+### 2. Table Formatting
+```markdown
+| **Category** | **Description** | **Example** |
+|--------------|-----------------|-------------|
+| Content      | Explanation     | Code        |
+```
+
+### 3. Link Management
+- Internal links: `/book-directory/01_chapter_name.md`
+- External links: Include descriptive text
+- GitHub links: Connect to discussions or repositories
+
+## 🎯 Success Criteria
+- All content is in Korean
+- Every chapter follows the 3-section pattern
+- Code examples are practical and well-commented
+- Personal insights are included
+- Visual organization with emojis is maintained
+- Links to external resources are provided
+- Time complexity analysis is included where relevant
+
+## 📋 Quality Checklist
+- [ ] Korean language used throughout
+- [ ] Numbered file prefix included
+- [ ] 3-section structure followed
+- [ ] Emojis used for visual organization
+- [ ] Code examples with comments
+- [ ] Personal thoughts included
+- [ ] External links provided
+- [ ] Time complexity mentioned
+- [ ] Practical applications connected

@@ -1,0 +1,199 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Code Quality Standards for Book Reviews
+
+## 🎯 Purpose
+This rule ensures all code examples in book reviews maintain high quality, are educational, and follow best practices for learning and understanding.
+
+## 📁 Referenced Files
+- Main structure: [README.md](mdc:README.md)
+- Template: [Template.md](mdc:Template.md)
+- Example implementations in: `ds-the-fun-way/`, `five-lines-of-code/`, `리액트-훅을-활용한-마이크로-상태-관리/`
+
+## 🚨 CRITICAL CODE RULES - MUST FOLLOW
+
+### 1. Code Documentation Standards
+- **MUST include Korean comments** explaining the logic
+- **MUST specify time complexity** for algorithms
+- **MUST include space complexity** when relevant
+- **MUST explain the purpose** of each function/class
+
+### 2. Code Structure Requirements
+```typescript
+// ✅ CORRECT FORMAT
+/**
+ * 함수 설명 (한국어)
+ * @param input - 입력값 설명
+ * @returns 반환값 설명
+ * @timeComplexity O(n) - 시간복잡도 설명
+ * @spaceComplexity O(1) - 공간복잡도 설명
+ */
+function exampleFunction(input: string): number {
+  // 구현 로직 설명
+  const result = input.length;
+  
+  // 결과 반환
+  return result;
+}
+```
+
+### 3. Algorithm Implementation Standards
+- **MUST include step-by-step comments** for complex algorithms
+- **MUST show edge cases** and how they're handled
+- **MUST demonstrate optimization techniques** when applicable
+- **MUST connect to real-world use cases**
+
+## ❌ CODE VIOLATIONS - STRICTLY FORBIDDEN
+
+### 1. Documentation Violations
+- **NEVER write code without Korean comments**
+- **NEVER skip time complexity analysis**
+- **NEVER omit function purpose explanation**
+- **NEVER use unclear variable names**
+
+### 2. Implementation Violations
+- **NEVER write inefficient code** without explaining why
+- **NEVER skip error handling** for critical operations
+- **NEVER use magic numbers** without explanation
+- **NEVER create code that doesn't compile/run**
+
+### 3. Educational Violations
+- **NEVER skip the learning connection** to real-world scenarios
+- **NEVER omit comparison** with alternative approaches
+- **NEVER skip performance implications** explanation
+
+## ✅ BEST PRACTICES FOR CODE EXAMPLES
+
+### 1. Algorithm Explanations
+```typescript
+// ✅ GOOD EXAMPLE
+/**
+ * 삽입 정렬 알고리즘
+ * 배열의 앞부분을 정렬된 상태로 유지하면서
+ * 새로운 요소를 적절한 위치에 삽입하는 방식
+ * 
+ * @param arr - 정렬할 배열
+ * @returns 정렬된 배열
+ * @timeComplexity O(n²) - 최악의 경우
+ * @spaceComplexity O(1) - 제자리 정렬
+ */
+function insertionSort(arr: number[]): number[] {
+  const n = arr.length;
+  
+  // 두 번째 요소부터 시작 (첫 번째는 이미 정렬된 것으로 간주)
+  for (let i = 1; i < n; i++) {
+    const current = arr[i]; // 현재 삽입할 요소
+    let j = i - 1; // 정렬된 부분의 마지막 인덱스
+    
+    // 정렬된 부분에서 current보다 큰 요소들을 뒤로 이동
+    while (j >= 0 && arr[j] > current) {
+      arr[j + 1] = arr[j];
+      j--;
+    }
+    
+    // current를 적절한 위치에 삽입
+    arr[j + 1] = current;
+  }
+  
+  return arr;
+}
+```
+
+### 2. Data Structure Examples
+```typescript
+// ✅ GOOD EXAMPLE
+/**
+ * 연결 리스트 노드 클래스
+ * 데이터와 다음 노드에 대한 참조를 저장
+ */
+class ListNode<T> {
+  constructor(
+    public data: T,
+    public next: ListNode<T> | null = null
+  ) {}
+}
+
+/**
+ * 연결 리스트 클래스
+ * 노드들을 연결하여 선형 데이터 구조를 만듦
+ * 
+ * @timeComplexity 접근: O(n), 삽입/삭제: O(1) (헤드에서)
+ * @spaceComplexity O(n) - n개의 노드
+ */
+class LinkedList<T> {
+  private head: ListNode<T> | null = null;
+  
+  /**
+   * 리스트의 맨 앞에 새 노드 추가
+   * @param data - 추가할 데이터
+   */
+  prepend(data: T): void {
+    const newNode = new ListNode(data, this.head);
+    this.head = newNode;
+  }
+}
+```
+
+### 3. React Hook Examples
+```typescript
+// ✅ GOOD EXAMPLE
+/**
+ * 카운터 커스텀 훅
+ * 상태 관리 로직을 컴포넌트에서 분리하여 재사용 가능하게 만듦
+ * 
+ * @param initialValue - 초기값
+ * @returns [현재값, 증가함수, 감소함수, 리셋함수]
+ */
+function useCounter(initialValue: number = 0) {
+  const [count, setCount] = useState(initialValue);
+  
+  const increment = useCallback(() => {
+    setCount(prev => prev + 1);
+  }, []);
+  
+  const decrement = useCallback(() => {
+    setCount(prev => prev - 1);
+  }, []);
+  
+  const reset = useCallback(() => {
+    setCount(initialValue);
+  }, [initialValue]);
+  
+  return [count, increment, decrement, reset] as const;
+}
+```
+
+## 🔧 Technical Requirements
+
+### 1. TypeScript Standards
+- **MUST use proper type annotations**
+- **MUST handle null/undefined cases**
+- **MUST use interfaces for complex objects**
+- **MUST demonstrate generic types** when relevant
+
+### 2. Performance Considerations
+- **MUST explain Big O notation** for algorithms
+- **MUST show optimization techniques**
+- **MUST compare different approaches**
+- **MUST mention memory usage** when significant
+
+### 3. Real-World Connections
+- **MUST link to LeetCode problems** when applicable
+- **MUST show practical use cases**
+- **MUST connect to work experiences**
+- **MUST demonstrate industry best practices**
+
+## 📋 Code Quality Checklist
+- [ ] Korean comments included
+- [ ] Time complexity specified
+- [ ] Space complexity mentioned
+- [ ] Function purpose explained
+- [ ] Edge cases handled
+- [ ] Real-world connections made
+- [ ] Performance implications discussed
+- [ ] Alternative approaches compared
+- [ ] Code is educational and clear
+- [ ] Follows TypeScript best practices

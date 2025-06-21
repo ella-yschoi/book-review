@@ -1,0 +1,220 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Translation Workflow Automation
+
+## 🎯 Purpose
+This rule defines an automated workflow for systematically translating all 47 Korean markdown files to English, with built-in progress tracking, validation, and quality assurance to ensure no files are missed.
+
+## 📁 Referenced Files
+- Complete inventory: [comprehensive-translation-coverage.mdc](mdc:comprehensive-translation-coverage.mdc)
+- Main structure: [README.md](mdc:README.md)
+- All Korean content directories
+
+## 🚨 CRITICAL WORKFLOW RULES - MUST FOLLOW
+
+### 1. Systematic Translation Order
+- **MUST follow the established order** by book, then by chapter number
+- **MUST translate README files first** in each directory
+- **MUST complete one book** before moving to the next
+- **MUST maintain chapter sequence** (01_, 02_, 03_, etc.)
+- **MUST track progress** for each file individually
+
+### 2. Automated Progress Tracking
+- **MUST update progress tracker** after each file completion
+- **MUST verify file count** matches inventory (47 total)
+- **MUST mark files as complete** only after quality review
+- **MUST maintain translation log** with timestamps
+- **MUST validate directory creation** for each book
+
+### 3. Quality Gates
+- **MUST pass technical accuracy check** before marking complete
+- **MUST verify educational value preservation** for each file
+- **MUST confirm all sections translated** (Book Content, My Thoughts, Code Examples)
+- **MUST validate code examples** work correctly
+- **MUST ensure consistent terminology** across all files
+
+## ❌ WORKFLOW VIOLATIONS - STRICTLY FORBIDDEN
+
+### 1. Process Violations
+- **NEVER skip the established translation order**
+- **NEVER mark files complete** without quality review
+- **NEVER proceed to next book** without completing current book
+- **NEVER ignore progress tracking** requirements
+- **NEVER skip validation steps** for any file
+
+### 2. Quality Violations
+- **NEVER bypass quality gates** for expediency
+- **NEVER skip technical accuracy verification**
+- **NEVER omit educational value assessment**
+- **NEVER ignore consistency checks**
+- **NEVER skip final validation** before completion
+
+### 3. Coverage Violations
+- **NEVER assume files are complete** without verification
+- **NEVER skip progress tracker updates**
+- **NEVER ignore file count discrepancies**
+- **NEVER proceed without directory validation**
+- **NEVER complete project** without final inventory check
+
+## ✅ AUTOMATED WORKFLOW PROCESS
+
+### 1. Pre-Translation Setup
+```bash
+# Create English directories
+mkdir -p ds-the-fun-way-en/
+mkdir -p five-lines-of-code-en/
+mkdir -p react-hooks-micro-state-management/
+mkdir -p computer-secrets/
+
+# Create progress tracking file
+touch translation_progress.md
+```
+
+### 2. Translation Order and Priority
+```markdown
+## Translation Priority Order
+
+### Phase 1: Main Project Files (2 files)
+1. README.md → README-en.md
+2. Template.md → Template-en.md
+
+### Phase 2: Data Structures Book (18 files)
+1. ds-the-fun-way/README.md → ds-the-fun-way-en/README.md
+2. ds-the-fun-way/01_메모리_안_정보.md → ds-the-fun-way-en/01_memory_information.md
+3. ds-the-fun-way/02_이진_탐색.md → ds-the-fun-way-en/02_binary_search.md
+4. ds-the-fun-way/03_동적_자료_구조.md → ds-the-fun-way-en/03_dynamic_data_structures.md
+5. ds-the-fun-way/04_스택과_큐.md → ds-the-fun-way-en/04_stacks_and_queues.md
+6. ds-the-fun-way/05_이진_탐색_트리.md → ds-the-fun-way-en/05_binary_search_trees.md
+7. ds-the-fun-way/06_트라이와_적응형_자료_구조.md → ds-the-fun-way-en/06_tries_and_adaptive_data_structures.md
+8. ds-the-fun-way/07_우선순위_큐와_힙.md → ds-the-fun-way-en/07_priority_queues_and_heaps.md
+9. ds-the-fun-way/08_격자.md → ds-the-fun-way-en/08_grids.md
+10. ds-the-fun-way/09_공간_트리.md → ds-the-fun-way-en/09_spatial_trees.md
+11. ds-the-fun-way/10_해시_테이블.md → ds-the-fun-way-en/10_hash_tables.md
+12. ds-the-fun-way/11_캐시.md → ds-the-fun-way-en/11_caching.md
+13. ds-the-fun-way/12_B-트리_구조.md → ds-the-fun-way-en/12_b-tree_structures.md
+14. ds-the-fun-way/13_블룸_필터.md → ds-the-fun-way-en/13_bloom_filters.md
+15. ds-the-fun-way/14_스킵_리스트.md → ds-the-fun-way-en/14_skip_lists.md
+16. ds-the-fun-way/15_그래프.md → ds-the-fun-way-en/15_graphs.md
+17. ds-the-fun-way/16_결론.md → ds-the-fun-way-en/16_conclusion.md
+
+### Phase 3: Five Lines of Code Book (15 files)
+1. five-lines-of-code/README.md → five-lines-of-code-en/README.md
+2. five-lines-of-code/01_리팩토링_리팩토링하기.md → five-lines-of-code-en/01_refactoring_refactoring.md
+3. five-lines-of-code/02_리팩토링_깊게_들여다보기.md → five-lines-of-code-en/02_deep_dive_into_refactoring.md
+4. five-lines-of-code/03_긴_코드_조각내기.md → five-lines-of-code-en/03_breaking_down_long_code.md
+5. five-lines-of-code/04_타입_코드_처리하기.md → five-lines-of-code-en/04_handling_type_codes.md
+6. five-lines-of-code/05_유사한_코드_융합하기.md → five-lines-of-code-en/05_merging_similar_code.md
+7. five-lines-of-code/06_데이터_보호.md → five-lines-of-code-en/06_data_protection.md
+8. five-lines-of-code/07_컴파일러와의_협업.md → five-lines-of-code-en/07_collaborating_with_compiler.md
+9. five-lines-of-code/08_주석_자제하기.md → five-lines-of-code-en/08_restraining_comments.md
+10. five-lines-of-code/09_코드_삭제의_미학.md → five-lines-of-code-en/09_the_art_of_code_deletion.md
+11. five-lines-of-code/10_코드_추가에_대한_두려움_떨쳐내기.md → five-lines-of-code-en/10_overcoming_fear_of_adding_code.md
+12. five-lines-of-code/11_코드_구조_따르기.md → five-lines-of-code-en/11_following_code_structure.md
+13. five-lines-of-code/12_최적화_일반화_회피.md → five-lines-of-code-en/12_avoiding_optimization_generalization.md
+14. five-lines-of-code/13_나쁜_코드를_식별_가능하게_만들기.md → five-lines-of-code-en/13_making_bad_code_identifiable.md
+15. five-lines-of-code/14_마무리.md → five-lines-of-code-en/14_conclusion.md
+
+### Phase 4: React Hooks Book (12 files)
+1. 리액트-훅을-활용한-마이크로-상태-관리/README.md → react-hooks-micro-state-management/README.md
+2. 리액트-훅을-활용한-마이크로-상태-관리/01_리액트_훅을_이용한_마이크로_상태_관리.md → react-hooks-micro-state-management/01_react_hooks_for_micro_state_management.md
+3. 리액트-훅을-활용한-마이크로-상태-관리/02_지역_상태와_전역_상태_사용하기.md → react-hooks-micro-state-management/02_using_local_and_global_state.md
+4. 리액트-훅을-활용한-마이크로-상태-관리/03_리액트_컨텍스트를_이용한_컴포넌트_상태_공유.md → react-hooks-micro-state-management/03_sharing_component_state_with_react_context.md
+5. 리액트-훅을-활용한-마이크로-상태-관리/04_구독을_이용한_모듈_상태_공유.md → react-hooks-micro-state-management/04_sharing_module_state_with_subscriptions.md
+6. 리액트-훅을-활용한-마이크로-상태-관리/05_리액트_컨텍스트와_구독을_이용한_컴포넌트_상태_공유.md → react-hooks-micro-state-management/05_sharing_component_state_with_context_and_subscriptions.md
+7. 리액트-훅을-활용한-마이크로-상태-관리/06_전역_상태_관리_라이브러리_소개.md → react-hooks-micro-state-management/06_introduction_to_global_state_management_libraries.md
+8. 리액트-훅을-활용한-마이크로-상태-관리/07_사용_사례_시나리오_1_Zustand.md → react-hooks-micro-state-management/07_use_case_scenario_1_zustand.md
+9. 리액트-훅을-활용한-마이크로-상태-관리/08_사용_사례_시나리오_2_Jotai.md → react-hooks-micro-state-management/08_use_case_scenario_2_jotai.md
+10. 리액트-훅을-활용한-마이크로-상태-관리/09_사용_사례_시나리오_3_Valtio.md → react-hooks-micro-state-management/09_use_case_scenario_3_valtio.md
+11. 리액트-훅을-활용한-마이크로-상태-관리/10_사용_사례_시나리오_4_React_Tracked.md → react-hooks-micro-state-management/10_use_case_scenario_4_react_tracked.md
+12. 리액트-훅을-활용한-마이크로-상태-관리/11_세_가지_전역_상태_라이브러리의_유사점과_차이점.md → react-hooks-micro-state-management/11_similarities_and_differences_of_three_global_state_libraries.md
+
+### Phase 5: Computer Secrets Book (1 file)
+1. 컴퓨터-밑바닥의-비밀/README.md → computer-secrets/README.md
+```
+
+### 3. Automated Progress Tracking Template
+```markdown
+# Translation Progress Tracker
+
+## Overall Progress: [X]/47 files completed
+
+### Phase 1: Main Project Files (2/2)
+- [x] README.md → README-en.md (Completed: YYYY-MM-DD HH:MM)
+- [x] Template.md → Template-en.md (Completed: YYYY-MM-DD HH:MM)
+
+### Phase 2: Data Structures Book (18/18)
+- [x] ds-the-fun-way/README.md → ds-the-fun-way-en/README.md (Completed: YYYY-MM-DD HH:MM)
+- [x] ds-the-fun-way/01_메모리_안_정보.md → ds-the-fun-way-en/01_memory_information.md (Completed: YYYY-MM-DD HH:MM)
+- [ ] ds-the-fun-way/02_이진_탐색.md → ds-the-fun-way-en/02_binary_search.md (In Progress)
+- [ ] ... (continue for all 18 files)
+
+### Phase 3: Five Lines of Code Book (15/15)
+- [ ] five-lines-of-code/README.md → five-lines-of-code-en/README.md (Pending)
+- [ ] ... (continue for all 15 files)
+
+### Phase 4: React Hooks Book (12/12)
+- [ ] 리액트-훅을-활용한-마이크로-상태-관리/README.md → react-hooks-micro-state-management/README.md (Pending)
+- [ ] ... (continue for all 12 files)
+
+### Phase 5: Computer Secrets Book (1/1)
+- [ ] 컴퓨터-밑바닥의-비밀/README.md → computer-secrets/README.md (Pending)
+
+## Quality Gates Passed
+- [ ] Technical accuracy verified for all completed files
+- [ ] Educational value preserved for all completed files
+- [ ] Code examples validated for all completed files
+- [ ] Terminology consistency confirmed across all files
+- [ ] Final validation completed for entire project
+```
+
+## 🔧 Workflow Automation Standards
+
+### 1. File Processing Workflow
+For each file:
+1. **Identify** file in translation order
+2. **Create** English directory if not exists
+3. **Translate** content following quality standards
+4. **Validate** technical accuracy and educational value
+5. **Update** progress tracker with completion timestamp
+6. **Verify** file count matches inventory
+7. **Proceed** to next file in sequence
+
+### 2. Quality Gate Validation
+For each completed file:
+- [ ] Technical terms correctly translated
+- [ ] Code examples functional with English comments
+- [ ] Personal insights preserved and clear
+- [ ] All sections included (Book Content, My Thoughts, Code Examples)
+- [ ] Links and references maintained
+- [ ] Formatting and structure preserved
+- [ ] Terminology consistent with previous files
+
+### 3. Progress Monitoring
+- [ ] Daily progress updates to tracker
+- [ ] Weekly quality review of completed files
+- [ ] Phase completion validation before moving to next phase
+- [ ] Final project validation when all 47 files complete
+
+## 📋 Workflow Automation Checklist
+- [ ] Translation order established and documented
+- [ ] Progress tracking system created
+- [ ] Quality gates defined and implemented
+- [ ] Directory structure created for all English versions
+- [ ] File naming conventions established
+- [ ] Automated validation procedures in place
+- [ ] Progress monitoring system active
+- [ ] Quality assurance process documented
+- [ ] Final validation checklist prepared
+- [ ] Completion criteria clearly defined
+
+## 🎯 Success Criteria
+- **Systematic Completion**: All 47 files translated in established order
+- **Quality Assurance**: All files pass quality gates before completion
+- **Progress Tracking**: Real-time monitoring of translation progress
+- **Consistency**: Uniform translation quality across all files
+- **Verification**: Multiple validation steps confirm complete coverage
+- **Automation**: Streamlined workflow reduces manual oversight requirements
+- **Completeness**: No files missed or skipped in translation process

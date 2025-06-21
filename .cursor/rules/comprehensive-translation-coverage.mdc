@@ -1,0 +1,210 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Comprehensive Translation Coverage Standards
+
+## 🎯 Purpose
+This rule ensures that ALL Korean markdown files in the project are translated to English without missing any files, directories, or content. It provides systematic coverage tracking and validation procedures.
+
+## 📁 Complete File Inventory
+Based on project analysis, there are **47 markdown files** that require translation:
+
+### Main Project Files (2 files)
+- [README.md](mdc:README.md) - Main project index
+- [Template.md](mdc:Template.md) - Template file
+
+### Data Structures Book (18 files)
+- `ds-the-fun-way/README.md`
+- `ds-the-fun-way/01_메모리_안_정보.md`
+- `ds-the-fun-way/02_이진_탐색.md`
+- `ds-the-fun-way/03_동적_자료_구조.md`
+- `ds-the-fun-way/04_스택과_큐.md`
+- `ds-the-fun-way/05_이진_탐색_트리.md`
+- `ds-the-fun-way/06_트라이와_적응형_자료_구조.md`
+- `ds-the-fun-way/07_우선순위_큐와_힙.md`
+- `ds-the-fun-way/08_격자.md`
+- `ds-the-fun-way/09_공간_트리.md`
+- `ds-the-fun-way/10_해시_테이블.md`
+- `ds-the-fun-way/11_캐시.md`
+- `ds-the-fun-way/12_B-트리_구조.md`
+- `ds-the-fun-way/13_블룸_필터.md`
+- `ds-the-fun-way/14_스킵_리스트.md`
+- `ds-the-fun-way/15_그래프.md`
+- `ds-the-fun-way/16_결론.md`
+
+### Five Lines of Code Book (15 files)
+- `five-lines-of-code/README.md`
+- `five-lines-of-code/01_리팩토링_리팩토링하기.md`
+- `five-lines-of-code/02_리팩토링_깊게_들여다보기.md`
+- `five-lines-of-code/03_긴_코드_조각내기.md`
+- `five-lines-of-code/04_타입_코드_처리하기.md`
+- `five-lines-of-code/05_유사한_코드_융합하기.md`
+- `five-lines-of-code/06_데이터_보호.md`
+- `five-lines-of-code/07_컴파일러와의_협업.md`
+- `five-lines-of-code/08_주석_자제하기.md`
+- `five-lines-of-code/09_코드_삭제의_미학.md`
+- `five-lines-of-code/10_코드_추가에_대한_두려움_떨쳐내기.md`
+- `five-lines-of-code/11_코드_구조_따르기.md`
+- `five-lines-of-code/12_최적화_일반화_회피.md`
+- `five-lines-of-code/13_나쁜_코드를_식별_가능하게_만들기.md`
+- `five-lines-of-code/14_마무리.md`
+
+### React Hooks Book (12 files)
+- `리액트-훅을-활용한-마이크로-상태-관리/README.md`
+- `리액트-훅을-활용한-마이크로-상태-관리/01_리액트_훅을_이용한_마이크로_상태_관리.md`
+- `리액트-훅을-활용한-마이크로-상태-관리/02_지역_상태와_전역_상태_사용하기.md`
+- `리액트-훅을-활용한-마이크로-상태-관리/03_리액트_컨텍스트를_이용한_컴포넌트_상태_공유.md`
+- `리액트-훅을-활용한-마이크로-상태-관리/04_구독을_이용한_모듈_상태_공유.md`
+- `리액트-훅을-활용한-마이크로-상태-관리/05_리액트_컨텍스트와_구독을_이용한_컴포넌트_상태_공유.md`
+- `리액트-훅을-활용한-마이크로-상태-관리/06_전역_상태_관리_라이브러리_소개.md`
+- `리액트-훅을-활용한-마이크로-상태-관리/07_사용_사례_시나리오_1_Zustand.md`
+- `리액트-훅을-활용한-마이크로-상태-관리/08_사용_사례_시나리오_2_Jotai.md`
+- `리액트-훅을-활용한-마이크로-상태-관리/09_사용_사례_시나리오_3_Valtio.md`
+- `리액트-훅을-활용한-마이크로-상태-관리/10_사용_사례_시나리오_4_React_Tracked.md`
+- `리액트-훅을-활용한-마이크로-상태-관리/11_세_가지_전역_상태_라이브러리의_유사점과_차이점.md`
+
+### Computer Secrets Book (1 file)
+- `컴퓨터-밑바닥의-비밀/README.md`
+
+## 🚨 CRITICAL COVERAGE RULES - MUST FOLLOW
+
+### 1. Complete File Coverage
+- **MUST translate ALL 47 markdown files** listed above
+- **MUST NOT skip any files** regardless of size or complexity
+- **MUST create English versions** for every Korean file
+- **MUST maintain parallel structure** between Korean and English versions
+- **MUST verify each file** is properly translated before marking complete
+
+### 2. Directory Structure Coverage
+- **MUST create English directories** for all 4 book directories:
+  - `ds-the-fun-way/` → `ds-the-fun-way-en/`
+  - `five-lines-of-code/` → `five-lines-of-code-en/`
+  - `리액트-훅을-활용한-마이크로-상태-관리/` → `react-hooks-micro-state-management/`
+  - `컴퓨터-밑바닥의-비밀/` → `computer-secrets/`
+- **MUST create English README** for each directory
+- **MUST maintain all subdirectories** and file relationships
+
+### 3. Content Coverage Standards
+- **MUST translate every section** of each file
+- **MUST preserve all code examples** with English comments
+- **MUST translate all personal insights** ("나의 생각" → "My Thoughts")
+- **MUST maintain all links** and references
+- **MUST preserve all tables** and formatting
+
+## ❌ COVERAGE VIOLATIONS - STRICTLY FORBIDDEN
+
+### 1. File Skipping Violations
+- **NEVER skip any markdown files** from the inventory
+- **NEVER assume a file is too small** to translate
+- **NEVER skip files** that seem less important
+- **NEVER ignore README files** in subdirectories
+- **NEVER skip template files** or main index files
+
+### 2. Directory Violations
+- **NEVER skip creating any English directories**
+- **NEVER mix Korean and English content** in same directory
+- **NEVER lose the directory hierarchy**
+- **NEVER skip creating README files** for English directories
+
+### 3. Content Violations
+- **NEVER skip any sections** within files
+- **NEVER omit personal insights** or interpretations
+- **NEVER skip code examples** or comments
+- **NEVER lose any educational content**
+- **NEVER skip cross-references** or links
+
+## ✅ COMPREHENSIVE COVERAGE PROCESS
+
+### 1. Pre-Translation Inventory Check
+```bash
+# Verify complete file inventory
+find . -name "*.md" -type f | sort > korean_files_inventory.txt
+wc -l korean_files_inventory.txt  # Should be 47 files
+```
+
+### 2. Translation Progress Tracking
+```markdown
+## Translation Progress Tracker
+
+### Main Project Files (2/2)
+- [x] README.md → README-en.md
+- [x] Template.md → Template-en.md
+
+### Data Structures Book (18/18)
+- [x] ds-the-fun-way/README.md → ds-the-fun-way-en/README.md
+- [x] ds-the-fun-way/01_메모리_안_정보.md → ds-the-fun-way-en/01_memory_information.md
+- [ ] ... (continue for all 18 files)
+
+### Five Lines of Code Book (15/15)
+- [x] five-lines-of-code/README.md → five-lines-of-code-en/README.md
+- [x] five-lines-of-code/01_리팩토링_리팩토링하기.md → five-lines-of-code-en/01_refactoring_refactoring.md
+- [ ] ... (continue for all 15 files)
+
+### React Hooks Book (12/12)
+- [x] 리액트-훅을-활용한-마이크로-상태-관리/README.md → react-hooks-micro-state-management/README.md
+- [ ] ... (continue for all 12 files)
+
+### Computer Secrets Book (1/1)
+- [x] 컴퓨터-밑바닥의-비밀/README.md → computer-secrets/README.md
+```
+
+### 3. File-by-File Translation Checklist
+For each file, verify:
+- [ ] File identified in inventory
+- [ ] English directory created
+- [ ] English filename assigned
+- [ ] All content translated
+- [ ] Code examples preserved with English comments
+- [ ] Personal insights translated
+- [ ] Links and references maintained
+- [ ] Formatting preserved
+- [ ] Quality review completed
+- [ ] File marked as complete in tracker
+
+## 🔧 Coverage Validation Process
+
+### 1. Pre-Translation Validation
+- [ ] Complete file inventory created and verified (47 files)
+- [ ] All directories identified for English versions
+- [ ] File naming conventions established
+- [ ] Translation order determined (by book, then by chapter)
+
+### 2. During Translation Validation
+- [ ] Each file marked as "in progress" when started
+- [ ] Each file marked as "complete" when finished
+- [ ] Progress tracker updated after each file
+- [ ] Quality checks performed for each completed file
+
+### 3. Post-Translation Validation
+- [ ] All 47 files verified as translated
+- [ ] All English directories created and populated
+- [ ] All internal links updated
+- [ ] Main README updated to include English versions
+- [ ] Cross-references between Korean and English versions created
+
+## 📋 Complete Coverage Checklist
+- [ ] All 47 markdown files identified and listed
+- [ ] All 4 book directories mapped to English versions
+- [ ] Translation progress tracker created and maintained
+- [ ] Each file translated completely (no sections skipped)
+- [ ] All code examples preserved with English comments
+- [ ] All personal insights translated and preserved
+- [ ] All links and references maintained
+- [ ] All tables and formatting preserved
+- [ ] All README files created for English directories
+- [ ] Main project README updated to include English versions
+- [ ] Cross-references created between Korean and English versions
+- [ ] Quality assurance completed for all files
+- [ ] Final inventory verification completed
+- [ ] No files or content missed in translation
+
+## 🎯 Success Criteria
+- **Complete Coverage**: All 47 markdown files translated
+- **Full Directory Structure**: All 4 book directories have English versions
+- **No Content Loss**: Every section, insight, and example preserved
+- **Quality Assurance**: All translations meet quality standards
+- **Navigation**: Clear paths between Korean and English versions
+- **Consistency**: Uniform translation quality across all files
+- **Verification**: Multiple validation steps confirm complete coverage

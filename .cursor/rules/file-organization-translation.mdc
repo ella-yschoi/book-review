@@ -1,0 +1,140 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# File Organization for Translation Project
+
+## 🎯 Purpose
+This rule defines the file organization, naming conventions, and directory structure for managing both Korean and English versions of the book review content.
+
+## 📁 Referenced Files
+- Main structure: [README.md](mdc:README.md)
+- Korean directories: `ds-the-fun-way/`, `five-lines-of-code/`, `리액트-훅을-활용한-마이크로-상태-관리/`
+- Template: [Template.md](mdc:Template.md)
+
+## 🚨 CRITICAL ORGANIZATION RULES - MUST FOLLOW
+
+### 1. Directory Structure Standards
+- **MUST create English directories** parallel to Korean ones
+- **MUST use English directory names** for translated content
+- **MUST maintain the same hierarchy** and organization
+- **MUST preserve numbered prefixes** in filenames
+
+### 2. File Naming Convention
+- **MUST use English filenames** for translated content
+- **MUST keep numbered prefixes**: `01_`, `02_`, `03_`
+- **MUST use underscores** instead of spaces
+- **MUST translate chapter titles** to English
+- **MUST maintain file extensions**: `.md`
+
+### 3. Directory Mapping
+```markdown
+# Korean → English Directory Mapping
+ds-the-fun-way/ → ds-the-fun-way-en/
+five-lines-of-code/ → five-lines-of-code-en/
+리액트-훅을-활용한-마이크로-상태-관리/ → react-hooks-micro-state-management/
+컴퓨터-밑바닥의-비밀/ → computer-secrets/
+```
+
+## ❌ ORGANIZATION VIOLATIONS - STRICTLY FORBIDDEN
+
+### 1. Structure Violations
+- **NEVER mix Korean and English content** in the same directory
+- **NEVER change the original Korean files** during translation
+- **NEVER lose the numbered prefix** system
+- **NEVER create inconsistent naming** patterns
+- **NEVER break the directory hierarchy**
+
+### 2. File Management Violations
+- **NEVER overwrite original Korean files**
+- **NEVER create files without proper naming**
+- **NEVER skip creating parallel directory structure**
+- **NEVER mix different book content** in same directory
+
+### 3. Organization Violations
+- **NEVER create flat file structure** (lose organization)
+- **NEVER ignore the existing project structure**
+- **NEVER create ambiguous directory names**
+- **NEVER skip README files** for English directories
+
+## ✅ BEST PRACTICES FOR FILE ORGANIZATION
+
+### 1. Directory Creation Pattern
+```bash
+# Create English directories
+mkdir -p ds-the-fun-way-en/
+mkdir -p five-lines-of-code-en/
+mkdir -p react-hooks-micro-state-management/
+mkdir -p computer-secrets/
+```
+
+### 2. File Naming Translation Examples
+```markdown
+# Korean Filename → English Filename
+01_메모리_안_정보.md → 01_memory_information.md
+02_이진_탐색.md → 02_binary_search.md
+03_동적_자료_구조.md → 03_dynamic_data_structures.md
+04_스택과_큐.md → 04_stacks_and_queues.md
+05_이진_탐색_트리.md → 05_binary_search_trees.md
+```
+
+### 3. README File Translation
+```markdown
+# Korean README → English README
+# 📔 읽고 나면 진짜 쉬워지는 자료구조
+# → # 📔 Data Structures the Fun Way
+
+# 📔 리액트 훅을 활용한 마이크로 상태 관리  
+# → # 📔 React Hooks for Micro State Management
+
+# 📔 컴퓨터 밑바닥의 비밀
+# → # 📔 Secrets of Computer Systems
+```
+
+## 🔧 File Management Standards
+
+### 1. Translation Workflow
+1. **Identify Korean directory** to translate
+2. **Create parallel English directory** with proper naming
+3. **Create English README** for the directory
+4. **Translate files one by one** maintaining structure
+5. **Update internal links** to point to English versions
+6. **Verify all files** are properly organized
+
+### 2. Link Management
+- **MUST update internal links** in translated content
+- **MUST maintain external links** (LeetCode, GitHub, etc.)
+- **MUST create cross-references** between Korean and English versions
+- **MUST update main README** to include English versions
+
+### 3. Content Synchronization
+- **MUST keep both versions** up to date
+- **MUST maintain parallel structure** between versions
+- **MUST ensure consistency** in numbering and organization
+- **MUST create clear navigation** between versions
+
+## 📋 File Organization Checklist
+- [ ] English directories created with proper names
+- [ ] File naming follows English conventions
+- [ ] Numbered prefixes maintained
+- [ ] Directory hierarchy preserved
+- [ ] README files created for English directories
+- [ ] Internal links updated in translated content
+- [ ] External links preserved
+- [ ] Cross-references created between versions
+- [ ] Main README updated to include English versions
+- [ ] File extensions maintained (.md)
+- [ ] No original Korean files modified
+- [ ] Parallel structure maintained
+- [ ] Clear separation between Korean and English content
+- [ ] Consistent naming patterns throughout
+- [ ] Navigation between versions clear
+
+## 🎯 Success Criteria
+- **Organization**: Clear, logical directory structure for both languages
+- **Consistency**: Uniform naming conventions across all files
+- **Accessibility**: Easy navigation between Korean and English versions
+- **Maintainability**: Simple to update and manage both versions
+- **Clarity**: Clear distinction between original and translated content
+- **Completeness**: All content properly organized and accessible

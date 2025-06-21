@@ -1,0 +1,157 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Learning Methodology Standards
+
+## 🎯 Purpose
+This rule defines the educational approach and learning methodology for creating effective book reviews that maximize knowledge retention and practical application.
+
+## 📁 Referenced Files
+- Main structure: [README.md](mdc:README.md)
+- Template: [Template.md](mdc:Template.md)
+- Learning examples in: `ds-the-fun-way/`, `five-lines-of-code/`, `리액트-훅을-활용한-마이크로-상태-관리/`
+
+## 🚨 CRITICAL LEARNING RULES - MUST FOLLOW
+
+### 1. Three-Pillar Learning Approach
+**MUST implement all three pillars in every chapter:**
+
+1. **Theory Understanding** (책의 내용)
+   - Summarize key concepts clearly
+   - Explain the "why" behind concepts
+   - Connect to fundamental principles
+
+2. **Personal Interpretation** (나의 생각)
+   - **MANDATORY** - Never skip this section
+   - Connect to personal experiences
+   - Question and challenge the content
+   - Form own opinions and insights
+
+3. **Practical Application** (코드 예시)
+   - Implement concepts in code
+   - Show real-world connections
+   - Link to actual problems (LeetCode, work scenarios)
+
+### 2. Progressive Learning Structure
+- **MUST build knowledge incrementally**
+- **MUST reference previous chapters** when relevant
+- **MUST show connections** between different concepts
+- **MUST demonstrate evolution** of understanding
+
+### 3. Active Learning Requirements
+- **MUST include questions** that challenge understanding
+- **MUST show multiple approaches** to solving problems
+- **MUST compare and contrast** different methods
+- **MUST encourage critical thinking**
+
+## ❌ LEARNING VIOLATIONS - STRICTLY FORBIDDEN
+
+### 1. Passive Learning Violations
+- **NEVER create content without personal insights**
+- **NEVER skip the "My Thoughts" section**
+- **NEVER just copy-paste book content**
+- **NEVER avoid questioning the material**
+
+### 2. Isolation Violations
+- **NEVER treat chapters as isolated units**
+- **NEVER skip connections to previous learning**
+- **NEVER ignore real-world applications**
+- **NEVER create content without practical examples**
+
+### 3. Superficial Understanding Violations
+- **NEVER accept concepts without questioning**
+- **NEVER skip implementation details**
+- **NEVER avoid performance implications**
+- **NEVER ignore edge cases and limitations**
+
+## ✅ BEST PRACTICES FOR EFFECTIVE LEARNING
+
+### 1. Deep Understanding Techniques
+```markdown
+### Book Content
+- **Core Concept**: 핵심 개념을 한 문장으로 요약
+- **Why It Matters**: 왜 중요한지 설명
+- **Key Principles**: 기본 원리 설명
+
+### My Thoughts
+- **Personal Connection**: 개인 경험과 연결
+- **Questions Raised**: 궁금한 점이나 의문점
+- **Alternative Perspectives**: 다른 관점에서의 해석
+- **Work Application**: 실제 업무에 어떻게 적용할 수 있는지
+
+### Code Examples
+- **Implementation**: 실제 코드로 구현
+- **Edge Cases**: 예외 상황 처리
+- **Performance Analysis**: 성능 분석
+- **Real-world Usage**: 실제 사용 사례
+```
+
+### 2. Knowledge Connection Methods
+- **Cross-Reference**: 다른 챕터나 책과의 연결점 찾기
+- **Pattern Recognition**: 반복되는 패턴이나 원리 발견
+- **Evolution Tracking**: 개념의 발전 과정 추적
+- **Application Mapping**: 실제 적용 가능한 영역 매핑
+
+### 3. Critical Thinking Framework
+```markdown
+### Questioning Framework
+1. **What**: 무엇인가?
+2. **Why**: 왜 그런가?
+3. **How**: 어떻게 작동하는가?
+4. **When**: 언제 사용하는가?
+5. **What If**: 만약 다른 상황이라면?
+
+### Analysis Framework
+1. **Advantages**: 장점은?
+2. **Disadvantages**: 단점은?
+3. **Alternatives**: 대안은?
+4. **Trade-offs**: 트레이드오프는?
+5. **Best Practices**: 최선의 방법은?
+```
+
+## 🔧 Educational Standards
+
+### 1. Content Organization
+- **MUST use clear hierarchy** in information structure
+- **MUST provide context** before diving into details
+- **MUST summarize key takeaways** at the end
+- **MUST include next steps** for further learning
+
+### 2. Engagement Techniques
+- **MUST use analogies** to explain complex concepts
+- **MUST include visual elements** (tables, diagrams when possible)
+- **MUST show before/after comparisons**
+- **MUST demonstrate problem-solving process**
+
+### 3. Retention Strategies
+- **MUST connect to existing knowledge**
+- **MUST provide multiple examples**
+- **MUST encourage active practice**
+- **MUST create memorable associations**
+
+## 📋 Learning Quality Checklist
+- [ ] Three-pillar approach implemented
+- [ ] Personal insights included
+- [ ] Practical examples provided
+- [ ] Real-world connections made
+- [ ] Questions and challenges raised
+- [ ] Multiple perspectives considered
+- [ ] Performance implications discussed
+- [ ] Edge cases addressed
+- [ ] Cross-references included
+- [ ] Next steps suggested
+- [ ] Critical thinking encouraged
+- [ ] Active learning promoted
+- [ ] Knowledge retention optimized
+- [ ] Practical application demonstrated
+- [ ] Progressive learning maintained
+
+## 🎯 Success Metrics
+- **Understanding Depth**: Concepts are deeply understood, not just memorized
+- **Application Ability**: Can apply concepts to new situations
+- **Critical Thinking**: Questions and challenges the material
+- **Knowledge Integration**: Connects new knowledge with existing understanding
+- **Practical Skills**: Can implement concepts in real code
+- **Continuous Learning**: Creates foundation for further study

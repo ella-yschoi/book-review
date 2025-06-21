@@ -1,0 +1,170 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Translation Standards for Korean to English
+
+## 🎯 Purpose
+This rule defines the standards for translating Korean technical book review content to English while maintaining educational quality, structure, and technical accuracy.
+
+## 📁 Referenced Files
+- Main structure: [README.md](mdc:README.md)
+- Korean content examples: `ds-the-fun-way/`, `five-lines-of-code/`, `리액트-훅을-활용한-마이크로-상태-관리/`
+- Template: [Template.md](mdc:Template.md)
+
+## 🚨 CRITICAL TRANSLATION RULES - MUST FOLLOW
+
+### 1. Language and Tone Standards
+- **MUST translate to professional, academic English**
+- **MUST maintain technical accuracy** - no approximation of technical terms
+- **MUST preserve the educational tone** - clear, instructive, and engaging
+- **MUST use consistent terminology** throughout the translation
+- **MUST maintain the original structure** and formatting
+
+### 2. Technical Translation Requirements
+- **MUST preserve all code examples** exactly as they are
+- **MUST translate comments in code** to English
+- **MUST maintain mathematical notation** (Big O, algorithms, etc.)
+- **MUST preserve all links** and references
+- **MUST keep emoji usage** for visual organization
+
+### 3. Content Structure Preservation
+- **MUST maintain the 3-section pattern**:
+  - "책의 내용" → "Book Content"
+  - "나의 생각" → "My Thoughts" 
+  - "코드 예시" → "Code Examples"
+- **MUST preserve all headers** and hierarchy
+- **MUST maintain all tables** and formatting
+- **MUST keep all bullet points** and lists
+
+## ❌ TRANSLATION VIOLATIONS - STRICTLY FORBIDDEN
+
+### 1. Content Violations
+- **NEVER lose technical accuracy** for readability
+- **NEVER skip translating any section** - especially "My Thoughts"
+- **NEVER change the meaning** of technical explanations
+- **NEVER omit personal insights** or interpretations
+- **NEVER remove code examples** or comments
+
+### 2. Structure Violations
+- **NEVER change the file naming convention** (keep numbered prefixes)
+- **NEVER alter the markdown structure**
+- **NEVER remove emojis** or visual elements
+- **NEVER change the order** of sections
+- **NEVER modify links** or references
+
+### 3. Quality Violations
+- **NEVER use machine translation** without human review
+- **NEVER create awkward or unnatural English**
+- **NEVER lose the educational value** of the original
+- **NEVER skip context** that makes content understandable
+
+## ✅ BEST PRACTICES FOR TRANSLATION
+
+### 1. Technical Term Translation
+```markdown
+# Korean → English Technical Terms
+자료구조 → Data Structure
+알고리즘 → Algorithm
+시간복잡도 → Time Complexity
+공간복잡도 → Space Complexity
+배열 → Array
+연결리스트 → Linked List
+스택 → Stack
+큐 → Queue
+트리 → Tree
+그래프 → Graph
+해시테이블 → Hash Table
+정렬 → Sorting
+탐색 → Search
+재귀 → Recursion
+동적 프로그래밍 → Dynamic Programming
+```
+
+### 2. Section Translation Patterns
+```markdown
+# Original Korean Structure → English Translation
+
+## 🔖 1.1. 변수 → ## 🔖 1.1. Variables
+### 변수는 라벨이다 → ### Variables are Labels
+
+### 책의 내용 → ### Book Content
+### 나의 생각 → ### My Thoughts  
+### 코드 예시 → ### Code Examples
+
+## 📚 관련 문제와 풀이 → ## 📚 Related Problems and Solutions
+```
+
+### 3. Code Comment Translation
+```typescript
+// Korean comments → English comments
+function insertionSort(A: number[]) {
+  const N = A.length;
+  let i = 1; // 0은 이미 정렬된 상태로 가정 → // 0 is already sorted
+
+  while (i < N) {
+    let current = A[i]; // 삽입하려는 요소를 임시로 저장 → // Store the element to insert temporarily
+    let j = i - 1; // j는 현재 요소 바로 앞 요소부터 비교 시작 → // Start comparison from the element right before current
+
+    while (j >= 0 && A[j] > current) {
+      A[j + 1] = A[j]; // j번째 요소를 뒤로 한 칸 이동 → // Move j-th element one position back
+      j = j - 1; // j를 한 칸 앞으로 이동 (더 앞 요소와 비교 위해) → // Move j one position forward (to compare with earlier elements)
+    }
+
+    A[j + 1] = current; // 이동이 끝난 위치에 current 배치 → // Place current at the position after movement ends
+    i = i + 1; // 다음 위치 작업을 위해 i 증가 → // Increment i for next position
+  }
+
+  return A;
+}
+```
+
+## 🔧 Translation Process Standards
+
+### 1. Pre-Translation Checklist
+- [ ] Identify all technical terms that need consistent translation
+- [ ] Note any cultural references that need explanation
+- [ ] Mark sections that require special attention (code, math, links)
+- [ ] Identify personal insights that must be preserved
+
+### 2. Translation Quality Checks
+- [ ] Technical accuracy verified
+- [ ] Educational value maintained
+- [ ] Personal insights preserved
+- [ ] Code examples intact
+- [ ] Links and references working
+- [ ] Structure and formatting preserved
+- [ ] English is natural and professional
+
+### 3. Post-Translation Review
+- [ ] Read through entire document for consistency
+- [ ] Verify all technical terms are correctly translated
+- [ ] Ensure code comments are clear and accurate
+- [ ] Check that personal insights are properly conveyed
+- [ ] Confirm educational value is maintained
+
+## 📋 Translation Quality Checklist
+- [ ] All Korean text translated to English
+- [ ] Technical terms consistently translated
+- [ ] Code examples preserved with English comments
+- [ ] Personal insights ("My Thoughts") properly translated
+- [ ] All links and references maintained
+- [ ] Emoji usage preserved
+- [ ] Table formatting maintained
+- [ ] Mathematical notation preserved
+- [ ] Educational tone maintained
+- [ ] Professional English used throughout
+- [ ] No meaning lost in translation
+- [ ] Structure and hierarchy preserved
+- [ ] File naming convention maintained
+- [ ] All sections included (no omissions)
+- [ ] Context and clarity maintained
+
+## 🎯 Success Criteria
+- **Accuracy**: Technical content is precisely translated without loss of meaning
+- **Clarity**: English is clear, professional, and educational
+- **Consistency**: Terminology is consistent throughout the document
+- **Completeness**: All content is translated, nothing is omitted
+- **Preservation**: Original structure, formatting, and educational value maintained
+- **Readability**: Natural, flowing English that maintains the original tone

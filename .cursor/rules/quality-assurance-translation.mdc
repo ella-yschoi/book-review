@@ -1,0 +1,205 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Quality Assurance for Translation Project
+
+## 🎯 Purpose
+This rule defines the quality assurance processes, review standards, and validation procedures to ensure high-quality translations that maintain educational value and technical accuracy.
+
+## 📁 Referenced Files
+- Main structure: [README.md](mdc:README.md)
+- Korean content: `ds-the-fun-way/`, `five-lines-of-code/`, `리액트-훅을-활용한-마이크로-상태-관리/`
+- Template: [Template.md](mdc:Template.md)
+
+## 🚨 CRITICAL QUALITY RULES - MUST FOLLOW
+
+### 1. Technical Accuracy Standards
+- **MUST verify all technical terms** are correctly translated
+- **MUST ensure mathematical notation** is preserved exactly
+- **MUST validate algorithm explanations** maintain precision
+- **MUST confirm code examples** work correctly after translation
+- **MUST preserve time/space complexity** explanations accurately
+
+### 2. Educational Value Preservation
+- **MUST maintain the learning progression** from simple to complex
+- **MUST preserve personal insights** and their educational value
+- **MUST ensure examples remain** clear and instructive
+- **MUST validate that concepts** are explained as clearly as original
+- **MUST confirm practical applications** are properly conveyed
+
+### 3. Language Quality Standards
+- **MUST use professional, academic English**
+- **MUST maintain consistent terminology** throughout
+- **MUST ensure natural, flowing prose**
+- **MUST avoid awkward or literal translations**
+- **MUST preserve the original tone** and style
+
+## ❌ QUALITY VIOLATIONS - STRICTLY FORBIDDEN
+
+### 1. Technical Violations
+- **NEVER lose technical precision** for readability
+- **NEVER change mathematical expressions** or algorithms
+- **NEVER omit important technical details**
+- **NEVER create ambiguous technical explanations**
+- **NEVER break code functionality** during translation
+
+### 2. Educational Violations
+- **NEVER lose the educational value** of personal insights
+- **NEVER skip important learning connections**
+- **NEVER omit practical examples** or applications
+- **NEVER create confusing explanations** where original was clear
+- **NEVER lose the progressive learning structure**
+
+### 3. Language Violations
+- **NEVER use machine translation** without human review
+- **NEVER create unnatural English** expressions
+- **NEVER lose the original meaning** or intent
+- **NEVER create inconsistent terminology**
+- **NEVER produce unclear or ambiguous text**
+
+## ✅ BEST PRACTICES FOR QUALITY ASSURANCE
+
+### 1. Multi-Stage Review Process
+```markdown
+## Stage 1: Technical Review
+- [ ] All technical terms correctly translated
+- [ ] Mathematical notation preserved
+- [ ] Code examples functional
+- [ ] Algorithm explanations accurate
+- [ ] Time/space complexity maintained
+
+## Stage 2: Educational Review
+- [ ] Learning progression maintained
+- [ ] Personal insights preserved
+- [ ] Examples clear and instructive
+- [ ] Practical applications conveyed
+- [ ] Cross-references accurate
+
+## Stage 3: Language Review
+- [ ] Professional English used
+- [ ] Consistent terminology
+- [ ] Natural, flowing prose
+- [ ] No awkward translations
+- [ ] Original tone preserved
+
+## Stage 4: Structure Review
+- [ ] All sections included
+- [ ] Formatting preserved
+- [ ] Links working correctly
+- [ ] Emojis and visual elements intact
+- [ ] File organization correct
+```
+
+### 2. Technical Term Validation
+```markdown
+# Critical Technical Terms to Validate
+자료구조 → Data Structure ✓
+알고리즘 → Algorithm ✓
+시간복잡도 → Time Complexity ✓
+공간복잡도 → Space Complexity ✓
+배열 → Array ✓
+연결리스트 → Linked List ✓
+스택 → Stack ✓
+큐 → Queue ✓
+트리 → Tree ✓
+그래프 → Graph ✓
+해시테이블 → Hash Table ✓
+정렬 → Sorting ✓
+탐색 → Search ✓
+재귀 → Recursion ✓
+동적 프로그래밍 → Dynamic Programming ✓
+```
+
+### 3. Code Quality Validation
+```typescript
+// ✅ VALIDATED CODE EXAMPLE
+/**
+ * Insertion Sort Algorithm
+ * Maintains a sorted portion of the array and expands it
+ * by inserting new elements in their correct positions
+ * 
+ * @param arr - Array to sort
+ * @returns Sorted array
+ * @timeComplexity O(n²) - Worst case
+ * @spaceComplexity O(1) - In-place sorting
+ */
+function insertionSort(arr: number[]): number[] {
+  const n = arr.length;
+  
+  // Start from second element (first is already sorted)
+  for (let i = 1; i < n; i++) {
+    const current = arr[i]; // Element to insert
+    let j = i - 1; // Start comparison from element before current
+    
+    // Move elements greater than current one position back
+    while (j >= 0 && arr[j] > current) {
+      arr[j + 1] = arr[j];
+      j--;
+    }
+    
+    // Place current in its correct position
+    arr[j + 1] = current;
+  }
+  
+  return arr;
+}
+```
+
+## 🔧 Quality Assurance Process
+
+### 1. Pre-Translation Quality Check
+- [ ] Identify all technical terms requiring special attention
+- [ ] Note cultural references that need explanation
+- [ ] Mark sections with complex algorithms or math
+- [ ] Identify personal insights that must be preserved
+- [ ] Review original structure and formatting
+
+### 2. During Translation Quality Check
+- [ ] Verify technical accuracy for each section
+- [ ] Ensure educational value is maintained
+- [ ] Check that personal insights are properly conveyed
+- [ ] Validate code examples remain functional
+- [ ] Confirm terminology consistency
+
+### 3. Post-Translation Quality Check
+- [ ] Read entire document for flow and consistency
+- [ ] Verify all technical terms are correctly translated
+- [ ] Test all code examples for functionality
+- [ ] Check that personal insights are clear and valuable
+- [ ] Confirm educational progression is maintained
+- [ ] Validate all links and references work
+- [ ] Ensure formatting and structure are preserved
+
+## 📋 Quality Assurance Checklist
+- [ ] Technical terms accurately translated
+- [ ] Mathematical notation preserved
+- [ ] Code examples functional with English comments
+- [ ] Algorithm explanations precise and clear
+- [ ] Time/space complexity explanations accurate
+- [ ] Personal insights preserved and clear
+- [ ] Learning progression maintained
+- [ ] Examples instructive and practical
+- [ ] Professional English used throughout
+- [ ] Consistent terminology maintained
+- [ ] Natural, flowing prose achieved
+- [ ] Original tone and style preserved
+- [ ] All sections included (no omissions)
+- [ ] Formatting and structure maintained
+- [ ] Links and references working
+- [ ] Emojis and visual elements intact
+- [ ] File organization correct
+- [ ] Cross-references accurate
+- [ ] Educational value maximized
+- [ ] Technical accuracy verified
+
+## 🎯 Success Criteria
+- **Technical Precision**: All technical content is accurately translated without loss of meaning
+- **Educational Excellence**: Learning value is maintained or enhanced through clear English
+- **Language Quality**: Professional, natural English that flows well
+- **Consistency**: Uniform terminology and style throughout
+- **Completeness**: All content translated with nothing omitted
+- **Functionality**: All code examples work correctly
+- **Accessibility**: Content is clear and understandable to English readers
+- **Preservation**: Original structure, formatting, and educational approach maintained

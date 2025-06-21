@@ -78,13 +78,13 @@ Based on project analysis, there are **47 markdown files** that require translat
 - **MUST verify each file** is properly translated before marking complete
 
 ### 2. Directory Structure Coverage
-- **MUST create English directories** for all 4 book directories:
-  - `ds-the-fun-way/` → `ds-the-fun-way-en/`
-  - `five-lines-of-code/` → `five-lines-of-code-en/`
-  - `리액트-훅을-활용한-마이크로-상태-관리/` → `react-hooks-micro-state-management/`
-  - `컴퓨터-밑바닥의-비밀/` → `computer-secrets/`
-- **MUST create English README** for each directory
-- **MUST maintain all subdirectories** and file relationships
+- MUST create English directories under en/ for all 4 book directories:
+  - kor/ds-the-fun-way/ → en/ds-the-fun-way/
+  - kor/five-lines-of-code/ → en/five-lines-of-code/
+  - kor/리액트-훅을-활용한-마이크로-상태-관리/ → en/react-hooks-micro-state-management/
+  - kor/컴퓨터-밑바닥의-비밀/ → en/computer-secrets/
+- MUST create English README for each directory
+- MUST maintain all subdirectories and file relationships
 
 ### 3. Content Coverage Standards
 - **MUST translate every section** of each file
@@ -152,8 +152,8 @@ wc -l korean_files_inventory.txt  # Should be 47 files
 
 ### 3. File-by-File Translation Checklist
 For each file, verify:
-- [ ] File identified in inventory
-- [ ] English directory created
+- [ ] File identified in kor/ directory
+- [ ] English directory created under en/
 - [ ] English filename assigned
 - [ ] All content translated
 - [ ] Code examples preserved with English comments

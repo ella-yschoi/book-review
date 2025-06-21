@@ -63,11 +63,14 @@ This rule defines an automated workflow for systematically translating all 47 Ko
 
 ### 1. Pre-Translation Setup
 ```bash
-# Create English directories
-mkdir -p ds-the-fun-way-en/
-mkdir -p five-lines-of-code-en/
-mkdir -p react-hooks-micro-state-management/
-mkdir -p computer-secrets/
+mkdir -p en/ds-the-fun-way/
+mkdir -p en/five-lines-of-code/
+mkdir -p en/react-hooks-micro-state-management/
+mkdir -p en/computer-secrets/
+mkdir -p kor/ds-the-fun-way/
+mkdir -p kor/five-lines-of-code/
+mkdir -p kor/리액트-훅을-활용한-마이크로-상태-관리/
+mkdir -p kor/컴퓨터-밑바닥의-비밀/
 
 # Create progress tracking file
 touch translation_progress.md

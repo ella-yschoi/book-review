@@ -1,4 +1,4 @@
-# 📚 Book Review
+# 📚 Book Review (English)
 
 > "I'm not a great programmer. I'm just a good programmer with great habits." - Kent Beck
 
@@ -6,12 +6,12 @@
 
 ## 📕 Completed Books
 
-- [Five Lines of Code](/five-lines-of-code-en/)
-- [Secrets of Computer Systems](/computer-secrets/)
+- [Five Lines of Code](/en/five-lines-of-code/)
+- [Secrets of Computer Systems](/en/computer-secrets/)
 - Understanding Web/HTTP/Networks with Illustrations
 - Elegant TypeScript with React
-- [React Hooks for Micro State Management](/react-hooks-micro-state-management/)
-- [Data Structures the Fun Way](/ds-the-fun-way-en/)
+- [React Hooks for Micro State Management](/en/react-hooks-micro-state-management/)
+- [Data Structures the Fun Way](/en/ds-the-fun-way/)
 
 <br/>
 
